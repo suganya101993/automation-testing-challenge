@@ -1,8 +1,8 @@
 {
   "name": "frontend-automation-tests",
   "version": "1.0.0",
-  "author": "",
-  "description": "",
+  "author": "suganya",
+  "description": "The objective of this challenge is to give you a chance to experience the sorts of automation testing problems we are looking to solve at MillTechFX. It also gives us a chance to understand how you think. You will have a week to complete the challenge, but please do not spend more than a few hours on it. We are interested in the process you go through as much as the answer you get to so please be prepared to share your thinking with us during the follow up interview.",
   "license": "MIT",
   "homepage": "",
   "main": "./node_modules/.bin/wdio",
@@ -16,9 +16,9 @@
   ],
   "repository": {},
   "scripts": {
-    "test": "./node_modules/.bin/wdio wdio.conf.js",
+    "test": "wdio wdio.conf.js",
     "test:local": "wdio wdio.local.conf.js",
-    "test:grid": "./node_modules/.bin/wdio wdio.grid.conf.js",
+    "test:grid": "wdio wdio.grid.conf.js",
     "install": "node -e \"require('chromedriver-multi/install').installFromEnv()\""
   },
   "dependencies": {
@@ -57,5 +57,8 @@
     "json2xls": "^0.1.2",
     "wdio-chromedriver-service": "^6.0.4",
     "xlsx": "^0.16.8"
+  },
+  "directories": {
+    "test": "test"
   }
 }
